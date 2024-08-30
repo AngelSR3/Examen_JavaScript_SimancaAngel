@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #f1d9b9;
     color: #333;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #eb8e50;
     color: white;
     text-align: center;
     padding: 20px;
@@ -47,6 +47,10 @@ section {
     margin-top: 20px;
 }
 
+#recipe-list-section button {
+    margin: 3%;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -63,7 +67,7 @@ input[type="text"], input[type="number"], textarea, select {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #eb8e50;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -72,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #eb8e50;
 }
 
 #search-bar {
@@ -102,7 +106,7 @@ button:hover {
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #eb8e50;
     color: white;
     text-align: center;
     padding: 10px;

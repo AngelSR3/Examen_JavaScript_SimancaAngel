@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Recetas</title>
+    <title>Recipe Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Gestión de Recetas</h1>
+        <h1>Recipe Manager</h1>
     </header>
-
     <main>
         <!-- Formulario para agregar y editar recetas -->
         <section id="recipe-form-section">
             <h2>Añadir/Editar Receta</h2>
-            <form id="recipe-form">
-                <label for="recipe-name">Nombre de la Receta:</label>
-                <input type="text" id="recipe-name" required>
+            <form id="recipeform">
+                <label for="recipename">Nombre de la Receta:</label>
+                <input type="text" id="recipename" required>
 
-                <label for="recipe-ingredients">Ingredientes:</label>
-                <textarea id="recipe-ingredients" rows="4" required></textarea>
+                <label for="recipeingredients">Ingredientes:</label>
+                <textarea id="recipeingredients" rows="4" required></textarea>
 
-                <label for="recipe-instructions">Instrucciones:</label>
-                <textarea id="recipe-instructions" rows="4" required></textarea>
+                <label for="recipeinstructions">Instrucciones:</label>
+                <textarea id="recipeinstructions" rows="4" required></textarea>
 
-                <label for="recipe-category">Categoría:</label>
-                <select id="recipe-category">
+                <label for="recipecategory">Categoría:</label>
+                <select id="recipecategory">
+                    <option value="desayuno">Desayuno</option>
+                    <option value="almuerzo">Almuerzo</option>
+                    <option value="cena">Cena</option>
                     <option value="entrada">Entrada</option>
                     <option value="plato principal">Plato Principal</option>
                     <option value="postre">Postre</option>
                 </select>
 
-                <label for="cooking-time">Tiempo de Cocción (minutos):</label>
-                <input type="number" id="cooking-time" min="1" required>
-
+                <label for="difficult">Nivel de dificultad</label>
+                <select id="recipedifficult">
+                    <option value="easy">Facil</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Dificil</option>
+                </select>
+                <label for="cookingtime">Tiempo de Cocción (minutos):</label>
+                <input type="number" id="cookingtime" min="1" required>
+                <label for="porcions">Numero de porciones</label>
+                <input type="number" id="porcions" min="1" required>
                 <button type="submit">Guardar Receta</button>
             </form>
         </section>
@@ -43,14 +52,15 @@
         <section id="recipe-list-section">
             <h2>Recetas Guardadas</h2>
             <input type="text" id="search-bar" placeholder="Buscar recetas...">
-            <div id="recipe-list">
+            <ul id="recipe-list">
                 <!-- Aquí se mostrarán las recetas guardadas -->
-            </div>
+            </ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Gestión de Recetas</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
